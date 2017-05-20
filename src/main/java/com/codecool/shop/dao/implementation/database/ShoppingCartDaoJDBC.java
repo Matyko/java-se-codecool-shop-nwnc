@@ -17,6 +17,7 @@ import org.slf4j.LoggerFactory;
 
 
 public class ShoppingCartDaoJDBC implements ShoppingCartDao {
+    private Logger logger = LoggerFactory.getLogger(ShoppingCartDao.class);
     private static ShoppingCartDaoJDBC instance = null;
 
 
@@ -32,7 +33,7 @@ public class ShoppingCartDaoJDBC implements ShoppingCartDao {
 
     @Override
     public void addNewCartElement(ShoppingCart cart, Product product) {
-
+        System.out.println("1");
         if (isElementInCart(cart, product)) {
 
             try (
@@ -45,6 +46,8 @@ public class ShoppingCartDaoJDBC implements ShoppingCartDao {
                 stmt.setInt(2, cart.getId());
                 stmt.setInt(3, product.getId());
                 stmt.executeUpdate();
+                System.out.println("2");
+                logger.info("New element added to cart "+product.toString());
             } catch (SQLException e) {
                 e.getStackTrace();
             }
@@ -63,6 +66,8 @@ public class ShoppingCartDaoJDBC implements ShoppingCartDao {
                 stmt.setInt(3, 1);
                 System.out.println("lefut");
                 stmt.executeUpdate();
+                System.out.println("3");
+                logger.info("Element amount raised in cart "+product.toString());
             } catch (SQLException e) {
                 e.getStackTrace();
             }
@@ -84,6 +89,7 @@ public class ShoppingCartDaoJDBC implements ShoppingCartDao {
                 stmt.setInt(2, cart.getId());
                 stmt.setInt(3, product.getId());
                 stmt.executeUpdate();
+                logger.info(num+" of a new element added to cart: "+product.toString());
             } catch (SQLException e) {
                 e.getStackTrace();
             }
@@ -102,6 +108,7 @@ public class ShoppingCartDaoJDBC implements ShoppingCartDao {
                 stmt.setInt(3, num);
                 System.out.println("lefut");
                 stmt.executeUpdate();
+                logger.info(num+" of a element added to cart: "+product.toString());
             } catch (SQLException e) {
                 e.getStackTrace();
             }
@@ -215,6 +222,7 @@ public class ShoppingCartDaoJDBC implements ShoppingCartDao {
                 stmt.setInt(2, cart.getId());
                 stmt.setInt(3, product.getId());
                 stmt.executeUpdate();
+                logger.info("Element removed from cart "+product.toString());
             } catch (SQLException e) {
                 e.getStackTrace();
             }
@@ -230,6 +238,7 @@ public class ShoppingCartDaoJDBC implements ShoppingCartDao {
                 stmt.setInt(1, cart.getId());
                 stmt.setInt(2, product.getId());
                 stmt.executeUpdate();
+            logger.info("Element deleted from cart "+product.toString());
             } catch (SQLException e) {
                 e.getStackTrace();
             }

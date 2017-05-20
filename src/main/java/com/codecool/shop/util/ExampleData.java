@@ -67,7 +67,7 @@ public class ExampleData {
     }
 
         private static void fillDatabaseWithExampleData() {
-            //createExampleUsers();
+//            createExampleUsers();
             fillDbWithSuppliers();
             fillDbWithProductCategory();
             fillDbWithProducts();

@@ -5,6 +5,7 @@ import com.codecool.shop.controller.ProductController;
 import com.codecool.shop.login.LoginHandler;
 import com.codecool.shop.util.DbConnect;
 import com.codecool.shop.util.ExampleData;
+
 import spark.ModelAndView;
 import spark.Request;
 import spark.Response;
