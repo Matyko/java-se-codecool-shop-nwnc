@@ -8,6 +8,9 @@ import com.codecool.shop.util.DbConnect;
 import java.sql.*;
 import java.util.List;
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
 /**
  * Created by atsidir on 2017.05.09..
  */
