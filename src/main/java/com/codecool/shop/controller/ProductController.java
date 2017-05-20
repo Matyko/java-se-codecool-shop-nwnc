@@ -17,6 +17,7 @@ import spark.Request;
 
 import static com.codecool.shop.model.CurrentUser.*;
 
+
 import spark.Response;
 import spark.ModelAndView;
 import spark.Route;
@@ -24,11 +25,15 @@ import spark.template.thymeleaf.ThymeleafTemplateEngine;
 
 import static com.codecool.shop.util.RequestUtil.*;
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
 import java.util.*;
 
 public class ProductController {
-
+    private static final Logger logger = LoggerFactory.getLogger(ProductController.class);
     public static Route renderAllProducts = (Request req, Response res) -> {
+        logger.info("something");
         ProductDao productDataStore = ProductDaoJDBC.getInstance();
         ProductCategoryDao productCategoryDataStore = ProductCategoryDaoJDBC.getInstance();
         ProductFilter filter = new ProductFilter();
@@ -52,6 +57,7 @@ public class ProductController {
             params.put("category", productCategoryList);
             params.put("filter", filter);
 
+            logger.info("All products rendered.");
             return new ThymeleafTemplateEngine().render(new ModelAndView(params, "product/index"));
         }
 
@@ -59,7 +65,7 @@ public class ProductController {
         params.put("category", productCategoryDataStore.getAll());
         params.put("products", productDataStore.getAll());
         params.put("filter", filter);
-
+        logger.info("All products rendered.");
         return new ThymeleafTemplateEngine().render(new ModelAndView(params, "product/index"));
     };
 
@@ -75,12 +81,14 @@ public class ProductController {
             Product prod = productDataStore.find(id);
 
             shoppingCartDao.addNewCartElement(cart, prod);
+            logger.info("Product added to logged in client's cart: " + prod.toString());
             return true;
         } else {
             int id = Integer.parseInt(req.queryParams("id"));
             ShoppingCart cart = req.session().attribute("cart");
             cart.add(productDataStore.find(id));
             req.session().attribute("cart", cart);
+            logger.info("Product added to anonymus client's cart: " + productDataStore.find(id).toString());
             return true;
         }
     };
@@ -98,11 +106,13 @@ public class ProductController {
 
             ShoppingCartDao shoppingCartDao = ShoppingCartDaoJDBC.getInstance();
             shoppingCartDao.removeElementFromCart(productDao.find(id), currentUser(req).getCostumer().getShoppingCart());
+            logger.info("Product removed from logged in client's cart: " + productDao.find(id).toString());
             return true;
         } else {
             ShoppingCart cart = getSessionShoppingCart(req);
             cart.decrease(id);
             setSessionShoppingcart(req, cart);
+            logger.info("Product removed from anonymus client's cart: " + cart.find(id).toString());
             return true;
         }
     };
@@ -113,11 +123,13 @@ public class ProductController {
             ShoppingCartDao shoppingCartDao = ShoppingCartDaoJDBC.getInstance();
             ProductDao productDao = ProductDaoJDBC.getInstance();
             shoppingCartDao.deleteElementsFromCart(productDao.find(id), currentUser(req).getCostumer().getShoppingCart());
+            logger.info("Product deleted from logged in client's cart: " + productDao.find(id).toString());
             return true;
         } else {
             ShoppingCart cart = getSessionShoppingCart(req);
             cart.remove(id);
             setSessionShoppingcart(req, cart);
+            logger.info("Product deleted from anonymus client's cart: " + cart.find(id).toString());
             return true;
         }
     };
@@ -130,6 +142,7 @@ public class ProductController {
             ShoppingCart cart = currentUser(req).getCostumer().getShoppingCart();
             params.put("products", productDataStore.getAll());
             params.put("shoppingcart", cart);
+            logger.info("Rendered cart of anonymus user.");
             return new ThymeleafTemplateEngine().render(new ModelAndView(params, "product/shoppingcart"));
 
         }
@@ -137,6 +150,7 @@ public class ProductController {
         ShoppingCart cart = getSessionShoppingCart(req);
         params.put("products", productDataStore.getAll());
         params.put("shoppingcart", cart);
+        logger.info("Rendered cart of logged in user.");
         return new ThymeleafTemplateEngine().render(new ModelAndView(params, "product/shoppingcart"));
     };
 
@@ -157,6 +171,7 @@ public class ProductController {
                 }
             }
         }
+        logger.info("Returning filtered product list: " + productCategoryList.toString());
         return productCategoryList;
     }
 
@@ -195,6 +210,7 @@ public class ProductController {
                 }
             }
         }
+        logger.info("Returning filtered product list: " + filteredProductList.toString());
         return filteredProductList;
     }
 

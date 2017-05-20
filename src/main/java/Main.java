@@ -11,11 +11,14 @@ import spark.Response;
 import spark.template.thymeleaf.ThymeleafTemplateEngine;
 import sun.rmi.runtime.Log;
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
 import java.util.HashMap;
 
 
 public class Main {
-
+    private static final Logger logger = LoggerFactory.getLogger(Main.class);
     public static void main(String[] args) {
         String CONNECTIONCONFIGFILE="src/main/resources/connection/properties/connectionProperties.txt";
         // default server settings
@@ -26,6 +29,7 @@ public class Main {
 
         // populate some data for the memory storage
         ExampleData.populateData();
+        logger.info("Example data created for memory usage.");
 
         get("/", ProductController.renderAllProducts);
         get("/index", ProductController.renderAllProducts);

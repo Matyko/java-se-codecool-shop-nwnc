@@ -1,5 +1,6 @@
 package com.codecool.shop.dao.implementation;
 
+import com.codecool.shop.dao.implementation.database.SupplierDaoJDBC;
 import com.codecool.shop.model.Supplier;
 import com.codecool.shop.util.DbConnect;
 import org.junit.jupiter.api.BeforeEach;

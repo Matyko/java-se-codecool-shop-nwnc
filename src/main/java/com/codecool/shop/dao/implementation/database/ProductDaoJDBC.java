@@ -32,7 +32,7 @@ public class ProductDaoJDBC implements ProductDao {
         return instance;
     }
 
-    protected void setDbConnectForTest(String testFilepath) {dbConnect = new DbConnect(testFilepath); }
+    public void setDbConnectForTest(String testFilepath) {dbConnect = new DbConnect(testFilepath); }
 
     @Override
     public void add(Product product) {
