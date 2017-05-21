@@ -16,15 +16,24 @@ import java.util.List;
  * Created by abelvaradi on 2017.05.08..
  */
 public class ProductDaoJDBC implements ProductDao {
+    /**
+     * instance is the only ProductDaoJDBC object if created, otherwise it is null
+     */
     private static ProductDaoJDBC instance = null;
 
     private DbConnect dbConnect;
+    /**
+     * defaultFilepath is the used filepath for connection, there is an alternate filepath for testing
+     */
     private static String defaultFilepath = "src/main/resources/connection/properties/connectionProperties.txt";
 
     private ProductDaoJDBC() {
         dbConnect = new DbConnect(defaultFilepath);
     }
 
+    /**
+     * @return instance of ProductDaoJDBC
+     */
     public static ProductDaoJDBC getInstance() {
         if (instance == null) {
             instance = new ProductDaoJDBC();
@@ -32,8 +41,12 @@ public class ProductDaoJDBC implements ProductDao {
         return instance;
     }
 
-    protected void setDbConnectForTest(String testFilepath) {dbConnect = new DbConnect(testFilepath); }
+    public void setDbConnectForTest(String testFilepath) {dbConnect = new DbConnect(testFilepath); }
 
+    /**
+     * Adds product to product database.
+     * @param product a product object
+     */
     @Override
     public void add(Product product) {
         try {
@@ -58,6 +71,11 @@ public class ProductDaoJDBC implements ProductDao {
         }
     }
 
+    /**
+     * method for searching for a product in the database by ID
+     * @param id ID of the product to look for
+     * @return return product object if found
+     */
     @Override
     public Product find(int id) {
 
@@ -92,6 +110,11 @@ public class ProductDaoJDBC implements ProductDao {
         return null;
     }
 
+    /**
+     * Lists all the available products in the database that we query for
+     * @param query accepts a query as a String
+     * @return returns a List of the products found
+     */
     private List<Product> getProducts(String query) {
         List<Product> productList = new ArrayList<>();
 
@@ -124,25 +147,42 @@ public class ProductDaoJDBC implements ProductDao {
         return productList;
     }
 
-
+    /**
+     *
+     * @return Returns all the products in database as a List.
+     */
     @Override
     public List<Product> getAll() {
         String query = "SELECT * FROM product;";
         return this.getProducts(query);
     }
 
+    /**
+     * @param supplier Supplier object
+     * @return Returns all the products by a supplier in database as a List.
+     */
     @Override
     public List<Product> getBy(Supplier supplier) {
         String query = "SELECT * FROM product WHERE supplier ='" + supplier.getId() + "';";
         return this.getProducts(query);
     }
 
+    /**
+     *
+     * @param productCategory ProductCategory object
+     * @return Returns all the products by a product category in database as a List.
+     */
     @Override
     public List<Product> getBy(ProductCategory productCategory) {
         String query = "SELECT * FROM product WHERE productcategory ='" + productCategory.getId() + "';";
         return this.getProducts(query);
     }
 
+    /**
+     *
+     * @param id ID of product object to remove
+     * @return Returns true if object removal was successful
+     */
     @Override
     public boolean remove(int id) {
         Product product = find(id);
@@ -165,6 +205,11 @@ public class ProductDaoJDBC implements ProductDao {
         return false;
     }
 
+    /**
+     *
+     * @param name name of product
+     * @return Returns ID of object by name.
+     */
     public int getIdByName(String name) {
         int result = 0;
         String query = "SELECT * FROM product WHERE name=?;";

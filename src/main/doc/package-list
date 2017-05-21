@@ -1,0 +1,9 @@
+
+com.codecool.shop.controller
+com.codecool.shop.dao
+com.codecool.shop.dao.implementation
+com.codecool.shop.dao.implementation.database
+com.codecool.shop.dao.implementation.memory
+com.codecool.shop.login
+com.codecool.shop.model
+com.codecool.shop.util

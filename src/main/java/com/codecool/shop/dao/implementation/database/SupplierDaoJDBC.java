@@ -28,7 +28,7 @@ public class SupplierDaoJDBC implements SupplierDao {
         return instance;
     }
 
-    protected void setDbConnectForTest(String testFilePath) {
+    public void setDbConnectForTest(String testFilePath) {
         dbConnect = new DbConnect(testFilePath);
     }
 

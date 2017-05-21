@@ -27,7 +27,9 @@ import static com.codecool.shop.util.RequestUtil.*;
 import java.util.*;
 
 public class ProductController {
-
+    /**
+     * Renders all products on the main page from the database.
+     */
     public static Route renderAllProducts = (Request req, Response res) -> {
         ProductDao productDataStore = ProductDaoJDBC.getInstance();
         ProductCategoryDao productCategoryDataStore = ProductCategoryDaoJDBC.getInstance();
@@ -63,7 +65,9 @@ public class ProductController {
         return new ThymeleafTemplateEngine().render(new ModelAndView(params, "product/index"));
     };
 
-
+    /**
+     * Sends product data to the database handling class so it puts the product in the shoppingcart.
+     */
     public static Route addToCart = (Request req, Response res) -> {
         ProductDao productDataStore = ProductDaoJDBC.getInstance();
 
@@ -84,12 +88,16 @@ public class ProductController {
             return true;
         }
     };
-
+    /**
+     * Returns the size of the ProductCategory database.
+     */
     public static Route categoryListSize = (Request req, Response res) -> {
         ProductCategoryDao productCategoryDataStore = ProductCategoryDaoJDBC.getInstance();
         return productCategoryDataStore.getAll().size();
     };
-
+    /**
+     * Sends data to database handler class to remove one product from shoppingcart.
+     */
     public static Route removeFromCart = (Request req, Response res) -> {
         int id = Integer.parseInt(req.queryParams("id"));
 
@@ -106,7 +114,9 @@ public class ProductController {
             return true;
         }
     };
-
+    /**
+     * Sends data to database handler class to delete the product from shoppingcart.
+     */
     public static Route deleteFromCart = (Request req, Response res) -> {
         int id = Integer.parseInt(req.queryParams("id"));
         if (isUserLoggedIn(req)) {
@@ -121,7 +131,9 @@ public class ProductController {
             return true;
         }
     };
-
+    /**
+     * Renders the shoppingcart
+     */
     public static Route renderCart = (Request req, Response res) -> {
         ProductDao productDataStore = ProductDaoJDBC.getInstance();
         Map params = new HashMap<>();
@@ -140,7 +152,11 @@ public class ProductController {
         return new ThymeleafTemplateEngine().render(new ModelAndView(params, "product/shoppingcart"));
     };
 
-
+    /**
+     *
+     * @param categoryNames Names of Product Categories.
+     * @return Returns list of ProductCategory objects.
+     */
     private static List<ProductCategory> getRequestedCategories(String[] categoryNames) {
         if (categoryNames == null) {
             ProductCategoryDao productCategoryDao = ProductCategoryDaoJDBC.getInstance();
@@ -160,6 +176,11 @@ public class ProductController {
         return productCategoryList;
     }
 
+    /**
+     *
+     * @param supplierNames Names of suppliers.
+     * @return Returns list of Supplier objects.
+     */
     private static List<Supplier> getRequestedSuppliers(String[] supplierNames) {
 
         if (supplierNames == null) {
@@ -181,6 +202,11 @@ public class ProductController {
         return supplierList;
     }
 
+    /**
+     *
+     * @param suppliers Supplier objects' list.
+     * @return Returns a list of products by the suppliers in the list.
+     */
     private static Set filterBySupplier(List<Supplier> suppliers) {
         if (suppliers == null) {
             return null;
@@ -198,6 +224,9 @@ public class ProductController {
         return filteredProductList;
     }
 
+    /**
+     * Sets the amount of objects in the shoppingcart.
+     */
     public static Route setAmount = (Request req, Response res) -> {
         int id = Integer.parseInt(req.queryParams("id"));
         int num = Integer.parseInt(req.queryParams("num"));
@@ -217,7 +246,9 @@ public class ProductController {
             return null;
         }
     };
-
+    /**
+     * Returns the size of the shoppingcart.
+     */
     public static Route shoppingCartSize = (Request req, Response res) -> {
         if (isUserLoggedIn(req)) {
             return currentUser(req).getCostumer().getShoppingCart().getAllProducts();

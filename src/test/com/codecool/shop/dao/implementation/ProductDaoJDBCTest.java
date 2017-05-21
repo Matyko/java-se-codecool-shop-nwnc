@@ -1,5 +1,8 @@
 package com.codecool.shop.dao.implementation;
 
+import com.codecool.shop.dao.implementation.database.ProductCategoryDaoJDBC;
+import com.codecool.shop.dao.implementation.database.ProductDaoJDBC;
+import com.codecool.shop.dao.implementation.database.SupplierDaoJDBC;
 import com.codecool.shop.model.Product;
 import com.codecool.shop.model.ProductCategory;
 import com.codecool.shop.model.Supplier;
