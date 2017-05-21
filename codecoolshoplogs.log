@@ -1,0 +1,267 @@
+INFO    2017-05-21 23:10:59,456 [main] spark.staticfiles.StaticFilesConfiguration  - StaticResourceHandler configured with folder = /public
+INFO    2017-05-21 23:10:59,774 [main] Main  - Example data created for memory usage.
+INFO    2017-05-21 23:10:59,833 [Thread-1] org.eclipse.jetty.util.log  - Logging initialized @976ms
+INFO    2017-05-21 23:10:59,962 [Thread-1] spark.embeddedserver.jetty.EmbeddedJettyServer  - == Spark has ignited ...
+INFO    2017-05-21 23:10:59,963 [Thread-1] spark.embeddedserver.jetty.EmbeddedJettyServer  - >> Listening on 0.0.0.0:8888
+INFO    2017-05-21 23:10:59,992 [Thread-1] org.eclipse.jetty.server.Server  - jetty-9.3.6.v20151106
+INFO    2017-05-21 23:11:00,111 [Thread-1] org.eclipse.jetty.server.ServerConnector  - Started ServerConnector@12232795{HTTP/1.1,[http/1.1]}{0.0.0.0:8888}
+INFO    2017-05-21 23:11:00,112 [Thread-1] org.eclipse.jetty.server.Server  - Started @1259ms
+INFO    2017-05-21 23:11:14,775 [main] spark.staticfiles.StaticFilesConfiguration  - StaticResourceHandler configured with folder = /public
+INFO    2017-05-21 23:11:15,069 [main] Main  - Example data created for memory usage.
+INFO    2017-05-21 23:11:15,145 [Thread-1] org.eclipse.jetty.util.log  - Logging initialized @1039ms
+INFO    2017-05-21 23:11:15,356 [Thread-1] spark.embeddedserver.jetty.EmbeddedJettyServer  - == Spark has ignited ...
+INFO    2017-05-21 23:11:15,357 [Thread-1] spark.embeddedserver.jetty.EmbeddedJettyServer  - >> Listening on 0.0.0.0:8888
+INFO    2017-05-21 23:11:15,372 [Thread-1] org.eclipse.jetty.server.Server  - jetty-9.3.6.v20151106
+INFO    2017-05-21 23:11:15,454 [Thread-1] org.eclipse.jetty.server.ServerConnector  - Started ServerConnector@36895fcf{HTTP/1.1,[http/1.1]}{0.0.0.0:8888}
+INFO    2017-05-21 23:11:15,454 [Thread-1] org.eclipse.jetty.server.Server  - Started @1361ms
+DEBUG   2017-05-21 23:11:33,449 [qtp1640363045-18] com.codecool.shop.controller.ProductController  - something
+DEBUG   2017-05-21 23:11:33,651 [qtp1640363045-18] com.codecool.shop.controller.ProductController  - All products rendered.
+INFO    2017-05-21 23:11:33,796 [qtp1640363045-18] org.thymeleaf.TemplateEngine  - [THYMELEAF] INITIALIZING TEMPLATE ENGINE
+INFO    2017-05-21 23:11:33,946 [qtp1640363045-18] org.thymeleaf.templateresolver.AbstractTemplateResolver  - [THYMELEAF] INITIALIZING TEMPLATE RESOLVER: org.thymeleaf.templateresolver.TemplateResolver
+INFO    2017-05-21 23:11:33,947 [qtp1640363045-18] org.thymeleaf.templateresolver.AbstractTemplateResolver  - [THYMELEAF] TEMPLATE RESOLVER INITIALIZED OK
+INFO    2017-05-21 23:11:33,947 [qtp1640363045-18] org.thymeleaf.messageresolver.AbstractMessageResolver  - [THYMELEAF] INITIALIZING MESSAGE RESOLVER: org.thymeleaf.messageresolver.StandardMessageResolver
+INFO    2017-05-21 23:11:33,947 [qtp1640363045-18] org.thymeleaf.messageresolver.AbstractMessageResolver  - [THYMELEAF] MESSAGE RESOLVER INITIALIZED OK
+INFO    2017-05-21 23:11:33,953 [qtp1640363045-18] org.thymeleaf.TemplateEngine.CONFIG  - [THYMELEAF] TEMPLATE ENGINE CONFIGURATION:
+[THYMELEAF] * Cache Factory implementation: org.thymeleaf.cache.StandardCacheManager
+[THYMELEAF] * Template modes:
+[THYMELEAF]     * XML
+[THYMELEAF]     * XHTML
+[THYMELEAF]     * HTML5
+[THYMELEAF]     * VALIDXML
+[THYMELEAF]     * LEGACYHTML5
+[THYMELEAF]     * VALIDXHTML
+[THYMELEAF] * Template resolvers (in order):
+[THYMELEAF]     * org.thymeleaf.templateresolver.TemplateResolver
+[THYMELEAF] * Message resolvers (in order):
+[THYMELEAF]     * org.thymeleaf.messageresolver.StandardMessageResolver
+[THYMELEAF] * Dialect: org.thymeleaf.standard.StandardDialect
+[THYMELEAF]     * Prefix: "th"
+[THYMELEAF] TEMPLATE ENGINE CONFIGURED OK
+INFO    2017-05-21 23:11:33,953 [qtp1640363045-18] org.thymeleaf.TemplateEngine  - [THYMELEAF] TEMPLATE ENGINE INITIALIZED
+DEBUG   2017-05-21 23:11:36,177 [qtp1640363045-21] com.codecool.shop.controller.ProductController  - Product added to anonymus client's cart: id: 1, name: Amazon Fire, defaultPrice: 49.900002, defaultCurrency: USD, 
+DEBUG   2017-05-21 23:11:36,464 [qtp1640363045-18] com.codecool.shop.controller.ProductController  - Product added to anonymus client's cart: id: 1, name: Amazon Fire, defaultPrice: 49.900002, defaultCurrency: USD, 
+DEBUG   2017-05-21 23:11:36,689 [qtp1640363045-20] com.codecool.shop.controller.ProductController  - Product added to anonymus client's cart: id: 1, name: Amazon Fire, defaultPrice: 49.900002, defaultCurrency: USD, 
+DEBUG   2017-05-21 23:11:36,914 [qtp1640363045-14] com.codecool.shop.controller.ProductController  - Product added to anonymus client's cart: id: 1, name: Amazon Fire, defaultPrice: 49.900002, defaultCurrency: USD, 
+DEBUG   2017-05-21 23:15:21,368 [qtp1640363045-20] com.codecool.shop.controller.ProductController  - something
+DEBUG   2017-05-21 23:15:21,561 [qtp1640363045-20] com.codecool.shop.controller.ProductController  - All products rendered.
+INFO    2017-05-21 23:15:21,561 [qtp1640363045-20] org.thymeleaf.TemplateEngine  - [THYMELEAF] INITIALIZING TEMPLATE ENGINE
+INFO    2017-05-21 23:15:21,565 [qtp1640363045-20] org.thymeleaf.templateresolver.AbstractTemplateResolver  - [THYMELEAF] INITIALIZING TEMPLATE RESOLVER: org.thymeleaf.templateresolver.TemplateResolver
+INFO    2017-05-21 23:15:21,565 [qtp1640363045-20] org.thymeleaf.templateresolver.AbstractTemplateResolver  - [THYMELEAF] TEMPLATE RESOLVER INITIALIZED OK
+INFO    2017-05-21 23:15:21,565 [qtp1640363045-20] org.thymeleaf.messageresolver.AbstractMessageResolver  - [THYMELEAF] INITIALIZING MESSAGE RESOLVER: org.thymeleaf.messageresolver.StandardMessageResolver
+INFO    2017-05-21 23:15:21,566 [qtp1640363045-20] org.thymeleaf.messageresolver.AbstractMessageResolver  - [THYMELEAF] MESSAGE RESOLVER INITIALIZED OK
+INFO    2017-05-21 23:15:21,566 [qtp1640363045-20] org.thymeleaf.TemplateEngine.CONFIG  - [THYMELEAF] TEMPLATE ENGINE CONFIGURATION:
+[THYMELEAF] * Cache Factory implementation: org.thymeleaf.cache.StandardCacheManager
+[THYMELEAF] * Template modes:
+[THYMELEAF]     * XML
+[THYMELEAF]     * XHTML
+[THYMELEAF]     * HTML5
+[THYMELEAF]     * VALIDXML
+[THYMELEAF]     * LEGACYHTML5
+[THYMELEAF]     * VALIDXHTML
+[THYMELEAF] * Template resolvers (in order):
+[THYMELEAF]     * org.thymeleaf.templateresolver.TemplateResolver
+[THYMELEAF] * Message resolvers (in order):
+[THYMELEAF]     * org.thymeleaf.messageresolver.StandardMessageResolver
+[THYMELEAF] * Dialect: org.thymeleaf.standard.StandardDialect
+[THYMELEAF]     * Prefix: "th"
+[THYMELEAF] TEMPLATE ENGINE CONFIGURED OK
+INFO    2017-05-21 23:15:21,567 [qtp1640363045-20] org.thymeleaf.TemplateEngine  - [THYMELEAF] TEMPLATE ENGINE INITIALIZED
+INFO    2017-05-21 23:15:37,204 [main] spark.staticfiles.StaticFilesConfiguration  - StaticResourceHandler configured with folder = /public
+INFO    2017-05-21 23:15:37,483 [main] Main  - Example data created for memory usage.
+INFO    2017-05-21 23:15:37,546 [Thread-1] org.eclipse.jetty.util.log  - Logging initialized @970ms
+INFO    2017-05-21 23:15:37,749 [Thread-1] spark.embeddedserver.jetty.EmbeddedJettyServer  - == Spark has ignited ...
+INFO    2017-05-21 23:15:37,749 [Thread-1] spark.embeddedserver.jetty.EmbeddedJettyServer  - >> Listening on 0.0.0.0:8888
+INFO    2017-05-21 23:15:37,757 [Thread-1] org.eclipse.jetty.server.Server  - jetty-9.3.6.v20151106
+INFO    2017-05-21 23:15:37,828 [Thread-1] org.eclipse.jetty.server.ServerConnector  - Started ServerConnector@2d028075{HTTP/1.1,[http/1.1]}{0.0.0.0:8888}
+INFO    2017-05-21 23:15:37,828 [Thread-1] org.eclipse.jetty.server.Server  - Started @1259ms
+DEBUG   2017-05-21 23:16:14,087 [qtp13135351-18] com.codecool.shop.controller.ProductController  - something
+DEBUG   2017-05-21 23:16:14,263 [qtp13135351-18] com.codecool.shop.controller.ProductController  - All products rendered.
+INFO    2017-05-21 23:16:14,423 [qtp13135351-18] org.thymeleaf.TemplateEngine  - [THYMELEAF] INITIALIZING TEMPLATE ENGINE
+INFO    2017-05-21 23:16:14,575 [qtp13135351-18] org.thymeleaf.templateresolver.AbstractTemplateResolver  - [THYMELEAF] INITIALIZING TEMPLATE RESOLVER: org.thymeleaf.templateresolver.TemplateResolver
+INFO    2017-05-21 23:16:14,575 [qtp13135351-18] org.thymeleaf.templateresolver.AbstractTemplateResolver  - [THYMELEAF] TEMPLATE RESOLVER INITIALIZED OK
+INFO    2017-05-21 23:16:14,576 [qtp13135351-18] org.thymeleaf.messageresolver.AbstractMessageResolver  - [THYMELEAF] INITIALIZING MESSAGE RESOLVER: org.thymeleaf.messageresolver.StandardMessageResolver
+INFO    2017-05-21 23:16:14,576 [qtp13135351-18] org.thymeleaf.messageresolver.AbstractMessageResolver  - [THYMELEAF] MESSAGE RESOLVER INITIALIZED OK
+INFO    2017-05-21 23:16:14,582 [qtp13135351-18] org.thymeleaf.TemplateEngine.CONFIG  - [THYMELEAF] TEMPLATE ENGINE CONFIGURATION:
+[THYMELEAF] * Cache Factory implementation: org.thymeleaf.cache.StandardCacheManager
+[THYMELEAF] * Template modes:
+[THYMELEAF]     * XHTML
+[THYMELEAF]     * VALIDXML
+[THYMELEAF]     * XML
+[THYMELEAF]     * VALIDXHTML
+[THYMELEAF]     * HTML5
+[THYMELEAF]     * LEGACYHTML5
+[THYMELEAF] * Template resolvers (in order):
+[THYMELEAF]     * org.thymeleaf.templateresolver.TemplateResolver
+[THYMELEAF] * Message resolvers (in order):
+[THYMELEAF]     * org.thymeleaf.messageresolver.StandardMessageResolver
+[THYMELEAF] * Dialect: org.thymeleaf.standard.StandardDialect
+[THYMELEAF]     * Prefix: "th"
+[THYMELEAF] TEMPLATE ENGINE CONFIGURED OK
+INFO    2017-05-21 23:16:14,582 [qtp13135351-18] org.thymeleaf.TemplateEngine  - [THYMELEAF] TEMPLATE ENGINE INITIALIZED
+DEBUG   2017-05-21 23:16:17,051 [qtp13135351-21] com.codecool.shop.controller.ProductController  - Product added to anonymus client's cart: id: 1, name: Amazon Fire, defaultPrice: 49.900002, defaultCurrency: USD, 
+DEBUG   2017-05-21 23:16:17,628 [qtp13135351-15] com.codecool.shop.controller.ProductController  - Product added to anonymus client's cart: id: 1, name: Amazon Fire, defaultPrice: 49.900002, defaultCurrency: USD, 
+DEBUG   2017-05-21 23:16:18,089 [qtp13135351-20] com.codecool.shop.controller.ProductController  - Product added to anonymus client's cart: id: 1, name: Amazon Fire, defaultPrice: 49.900002, defaultCurrency: USD, 
+DEBUG   2017-05-21 23:16:19,581 [qtp13135351-14] com.codecool.shop.controller.ProductController  - Rendered cart of logged in user.
+INFO    2017-05-21 23:16:19,581 [qtp13135351-14] org.thymeleaf.TemplateEngine  - [THYMELEAF] INITIALIZING TEMPLATE ENGINE
+INFO    2017-05-21 23:16:19,590 [qtp13135351-14] org.thymeleaf.templateresolver.AbstractTemplateResolver  - [THYMELEAF] INITIALIZING TEMPLATE RESOLVER: org.thymeleaf.templateresolver.TemplateResolver
+INFO    2017-05-21 23:16:19,590 [qtp13135351-14] org.thymeleaf.templateresolver.AbstractTemplateResolver  - [THYMELEAF] TEMPLATE RESOLVER INITIALIZED OK
+INFO    2017-05-21 23:16:19,590 [qtp13135351-14] org.thymeleaf.messageresolver.AbstractMessageResolver  - [THYMELEAF] INITIALIZING MESSAGE RESOLVER: org.thymeleaf.messageresolver.StandardMessageResolver
+INFO    2017-05-21 23:16:19,590 [qtp13135351-14] org.thymeleaf.messageresolver.AbstractMessageResolver  - [THYMELEAF] MESSAGE RESOLVER INITIALIZED OK
+INFO    2017-05-21 23:16:19,591 [qtp13135351-14] org.thymeleaf.TemplateEngine.CONFIG  - [THYMELEAF] TEMPLATE ENGINE CONFIGURATION:
+[THYMELEAF] * Cache Factory implementation: org.thymeleaf.cache.StandardCacheManager
+[THYMELEAF] * Template modes:
+[THYMELEAF]     * XHTML
+[THYMELEAF]     * VALIDXML
+[THYMELEAF]     * XML
+[THYMELEAF]     * VALIDXHTML
+[THYMELEAF]     * HTML5
+[THYMELEAF]     * LEGACYHTML5
+[THYMELEAF] * Template resolvers (in order):
+[THYMELEAF]     * org.thymeleaf.templateresolver.TemplateResolver
+[THYMELEAF] * Message resolvers (in order):
+[THYMELEAF]     * org.thymeleaf.messageresolver.StandardMessageResolver
+[THYMELEAF] * Dialect: org.thymeleaf.standard.StandardDialect
+[THYMELEAF]     * Prefix: "th"
+[THYMELEAF] TEMPLATE ENGINE CONFIGURED OK
+INFO    2017-05-21 23:16:19,591 [qtp13135351-14] org.thymeleaf.TemplateEngine  - [THYMELEAF] TEMPLATE ENGINE INITIALIZED
+INFO    2017-05-21 23:16:19,877 [qtp13135351-20] spark.http.matching.MatcherFilter  - The requested route [/fonts/bootstrap/glyphicons-halflings-regular.woff2] has not been mapped in Spark
+INFO    2017-05-21 23:16:19,898 [qtp13135351-15] spark.http.matching.MatcherFilter  - The requested route [/fonts/bootstrap/glyphicons-halflings-regular.woff] has not been mapped in Spark
+INFO    2017-05-21 23:16:19,912 [qtp13135351-19] spark.http.matching.MatcherFilter  - The requested route [/fonts/bootstrap/glyphicons-halflings-regular.ttf] has not been mapped in Spark
+DEBUG   2017-05-21 23:17:48,431 [qtp13135351-17] com.codecool.shop.controller.ProductController  - something
+DEBUG   2017-05-21 23:17:48,578 [qtp13135351-17] com.codecool.shop.controller.ProductController  - All products rendered.
+INFO    2017-05-21 23:17:48,578 [qtp13135351-17] org.thymeleaf.TemplateEngine  - [THYMELEAF] INITIALIZING TEMPLATE ENGINE
+INFO    2017-05-21 23:17:48,581 [qtp13135351-17] org.thymeleaf.templateresolver.AbstractTemplateResolver  - [THYMELEAF] INITIALIZING TEMPLATE RESOLVER: org.thymeleaf.templateresolver.TemplateResolver
+INFO    2017-05-21 23:17:48,581 [qtp13135351-17] org.thymeleaf.templateresolver.AbstractTemplateResolver  - [THYMELEAF] TEMPLATE RESOLVER INITIALIZED OK
+INFO    2017-05-21 23:17:48,581 [qtp13135351-17] org.thymeleaf.messageresolver.AbstractMessageResolver  - [THYMELEAF] INITIALIZING MESSAGE RESOLVER: org.thymeleaf.messageresolver.StandardMessageResolver
+INFO    2017-05-21 23:17:48,581 [qtp13135351-17] org.thymeleaf.messageresolver.AbstractMessageResolver  - [THYMELEAF] MESSAGE RESOLVER INITIALIZED OK
+INFO    2017-05-21 23:17:48,583 [qtp13135351-17] org.thymeleaf.TemplateEngine.CONFIG  - [THYMELEAF] TEMPLATE ENGINE CONFIGURATION:
+[THYMELEAF] * Cache Factory implementation: org.thymeleaf.cache.StandardCacheManager
+[THYMELEAF] * Template modes:
+[THYMELEAF]     * XHTML
+[THYMELEAF]     * VALIDXML
+[THYMELEAF]     * XML
+[THYMELEAF]     * VALIDXHTML
+[THYMELEAF]     * HTML5
+[THYMELEAF]     * LEGACYHTML5
+[THYMELEAF] * Template resolvers (in order):
+[THYMELEAF]     * org.thymeleaf.templateresolver.TemplateResolver
+[THYMELEAF] * Message resolvers (in order):
+[THYMELEAF]     * org.thymeleaf.messageresolver.StandardMessageResolver
+[THYMELEAF] * Dialect: org.thymeleaf.standard.StandardDialect
+[THYMELEAF]     * Prefix: "th"
+[THYMELEAF] TEMPLATE ENGINE CONFIGURED OK
+INFO    2017-05-21 23:17:48,583 [qtp13135351-17] org.thymeleaf.TemplateEngine  - [THYMELEAF] TEMPLATE ENGINE INITIALIZED
+DEBUG   2017-05-21 23:17:51,503 [qtp13135351-15] com.codecool.shop.controller.ProductController  - Product added to logged in client's cart: id: 1, name: Amazon Fire, defaultPrice: 49.900002, defaultCurrency: USD, 
+DEBUG   2017-05-21 23:17:51,703 [qtp13135351-19] com.codecool.shop.controller.ProductController  - Product added to logged in client's cart: id: 1, name: Amazon Fire, defaultPrice: 49.900002, defaultCurrency: USD, 
+DEBUG   2017-05-21 23:17:51,824 [qtp13135351-20] com.codecool.shop.controller.ProductController  - Product added to logged in client's cart: id: 1, name: Amazon Fire, defaultPrice: 49.900002, defaultCurrency: USD, 
+DEBUG   2017-05-21 23:17:52,983 [qtp13135351-21] com.codecool.shop.controller.ProductController  - Rendered cart of anonymus user.
+INFO    2017-05-21 23:17:52,984 [qtp13135351-21] org.thymeleaf.TemplateEngine  - [THYMELEAF] INITIALIZING TEMPLATE ENGINE
+INFO    2017-05-21 23:17:52,987 [qtp13135351-21] org.thymeleaf.templateresolver.AbstractTemplateResolver  - [THYMELEAF] INITIALIZING TEMPLATE RESOLVER: org.thymeleaf.templateresolver.TemplateResolver
+INFO    2017-05-21 23:17:52,987 [qtp13135351-21] org.thymeleaf.templateresolver.AbstractTemplateResolver  - [THYMELEAF] TEMPLATE RESOLVER INITIALIZED OK
+INFO    2017-05-21 23:17:52,987 [qtp13135351-21] org.thymeleaf.messageresolver.AbstractMessageResolver  - [THYMELEAF] INITIALIZING MESSAGE RESOLVER: org.thymeleaf.messageresolver.StandardMessageResolver
+INFO    2017-05-21 23:17:52,987 [qtp13135351-21] org.thymeleaf.messageresolver.AbstractMessageResolver  - [THYMELEAF] MESSAGE RESOLVER INITIALIZED OK
+INFO    2017-05-21 23:17:52,988 [qtp13135351-21] org.thymeleaf.TemplateEngine.CONFIG  - [THYMELEAF] TEMPLATE ENGINE CONFIGURATION:
+[THYMELEAF] * Cache Factory implementation: org.thymeleaf.cache.StandardCacheManager
+[THYMELEAF] * Template modes:
+[THYMELEAF]     * XHTML
+[THYMELEAF]     * VALIDXML
+[THYMELEAF]     * XML
+[THYMELEAF]     * VALIDXHTML
+[THYMELEAF]     * HTML5
+[THYMELEAF]     * LEGACYHTML5
+[THYMELEAF] * Template resolvers (in order):
+[THYMELEAF]     * org.thymeleaf.templateresolver.TemplateResolver
+[THYMELEAF] * Message resolvers (in order):
+[THYMELEAF]     * org.thymeleaf.messageresolver.StandardMessageResolver
+[THYMELEAF] * Dialect: org.thymeleaf.standard.StandardDialect
+[THYMELEAF]     * Prefix: "th"
+[THYMELEAF] TEMPLATE ENGINE CONFIGURED OK
+INFO    2017-05-21 23:17:52,988 [qtp13135351-21] org.thymeleaf.TemplateEngine  - [THYMELEAF] TEMPLATE ENGINE INITIALIZED
+INFO    2017-05-21 23:17:53,478 [qtp13135351-20] spark.http.matching.MatcherFilter  - The requested route [/fonts/bootstrap/glyphicons-halflings-regular.woff2] has not been mapped in Spark
+INFO    2017-05-21 23:17:53,522 [qtp13135351-14] spark.http.matching.MatcherFilter  - The requested route [/fonts/bootstrap/glyphicons-halflings-regular.woff] has not been mapped in Spark
+INFO    2017-05-21 23:17:53,551 [qtp13135351-19] spark.http.matching.MatcherFilter  - The requested route [/fonts/bootstrap/glyphicons-halflings-regular.ttf] has not been mapped in Spark
+INFO    2017-05-21 23:24:06,329 [main] spark.staticfiles.StaticFilesConfiguration  - StaticResourceHandler configured with folder = /public
+INFO    2017-05-21 23:24:06,638 [main] Main  - Example data created for memory usage.
+INFO    2017-05-21 23:24:06,744 [Thread-1] org.eclipse.jetty.util.log  - Logging initialized @1176ms
+INFO    2017-05-21 23:24:06,908 [Thread-1] spark.embeddedserver.jetty.EmbeddedJettyServer  - == Spark has ignited ...
+INFO    2017-05-21 23:24:06,908 [Thread-1] spark.embeddedserver.jetty.EmbeddedJettyServer  - >> Listening on 0.0.0.0:8888
+INFO    2017-05-21 23:24:06,918 [Thread-1] org.eclipse.jetty.server.Server  - jetty-9.3.6.v20151106
+INFO    2017-05-21 23:24:07,057 [Thread-1] org.eclipse.jetty.server.ServerConnector  - Started ServerConnector@52bbb7e5{HTTP/1.1,[http/1.1]}{0.0.0.0:8888}
+INFO    2017-05-21 23:24:07,058 [Thread-1] org.eclipse.jetty.server.Server  - Started @1506ms
+DEBUG   2017-05-21 23:24:09,303 [qtp828513541-19] com.codecool.shop.controller.ProductController  - All products rendered.
+INFO    2017-05-21 23:24:09,479 [qtp828513541-19] org.thymeleaf.TemplateEngine  - [THYMELEAF] INITIALIZING TEMPLATE ENGINE
+INFO    2017-05-21 23:24:09,656 [qtp828513541-19] org.thymeleaf.templateresolver.AbstractTemplateResolver  - [THYMELEAF] INITIALIZING TEMPLATE RESOLVER: org.thymeleaf.templateresolver.TemplateResolver
+INFO    2017-05-21 23:24:09,656 [qtp828513541-19] org.thymeleaf.templateresolver.AbstractTemplateResolver  - [THYMELEAF] TEMPLATE RESOLVER INITIALIZED OK
+INFO    2017-05-21 23:24:09,657 [qtp828513541-19] org.thymeleaf.messageresolver.AbstractMessageResolver  - [THYMELEAF] INITIALIZING MESSAGE RESOLVER: org.thymeleaf.messageresolver.StandardMessageResolver
+INFO    2017-05-21 23:24:09,657 [qtp828513541-19] org.thymeleaf.messageresolver.AbstractMessageResolver  - [THYMELEAF] MESSAGE RESOLVER INITIALIZED OK
+INFO    2017-05-21 23:24:09,666 [qtp828513541-19] org.thymeleaf.TemplateEngine.CONFIG  - [THYMELEAF] TEMPLATE ENGINE CONFIGURATION:
+[THYMELEAF] * Cache Factory implementation: org.thymeleaf.cache.StandardCacheManager
+[THYMELEAF] * Template modes:
+[THYMELEAF]     * HTML5
+[THYMELEAF]     * VALIDXHTML
+[THYMELEAF]     * XML
+[THYMELEAF]     * VALIDXML
+[THYMELEAF]     * LEGACYHTML5
+[THYMELEAF]     * XHTML
+[THYMELEAF] * Template resolvers (in order):
+[THYMELEAF]     * org.thymeleaf.templateresolver.TemplateResolver
+[THYMELEAF] * Message resolvers (in order):
+[THYMELEAF]     * org.thymeleaf.messageresolver.StandardMessageResolver
+[THYMELEAF] * Dialect: org.thymeleaf.standard.StandardDialect
+[THYMELEAF]     * Prefix: "th"
+[THYMELEAF] TEMPLATE ENGINE CONFIGURED OK
+INFO    2017-05-21 23:24:09,666 [qtp828513541-19] org.thymeleaf.TemplateEngine  - [THYMELEAF] TEMPLATE ENGINE INITIALIZED
+DEBUG   2017-05-21 23:24:13,126 [qtp828513541-23] com.codecool.shop.controller.ProductController  - All products rendered.
+INFO    2017-05-21 23:24:13,127 [qtp828513541-23] org.thymeleaf.TemplateEngine  - [THYMELEAF] INITIALIZING TEMPLATE ENGINE
+INFO    2017-05-21 23:24:13,133 [qtp828513541-23] org.thymeleaf.templateresolver.AbstractTemplateResolver  - [THYMELEAF] INITIALIZING TEMPLATE RESOLVER: org.thymeleaf.templateresolver.TemplateResolver
+INFO    2017-05-21 23:24:13,133 [qtp828513541-23] org.thymeleaf.templateresolver.AbstractTemplateResolver  - [THYMELEAF] TEMPLATE RESOLVER INITIALIZED OK
+INFO    2017-05-21 23:24:13,133 [qtp828513541-23] org.thymeleaf.messageresolver.AbstractMessageResolver  - [THYMELEAF] INITIALIZING MESSAGE RESOLVER: org.thymeleaf.messageresolver.StandardMessageResolver
+INFO    2017-05-21 23:24:13,133 [qtp828513541-23] org.thymeleaf.messageresolver.AbstractMessageResolver  - [THYMELEAF] MESSAGE RESOLVER INITIALIZED OK
+INFO    2017-05-21 23:24:13,134 [qtp828513541-23] org.thymeleaf.TemplateEngine.CONFIG  - [THYMELEAF] TEMPLATE ENGINE CONFIGURATION:
+[THYMELEAF] * Cache Factory implementation: org.thymeleaf.cache.StandardCacheManager
+[THYMELEAF] * Template modes:
+[THYMELEAF]     * HTML5
+[THYMELEAF]     * VALIDXHTML
+[THYMELEAF]     * XML
+[THYMELEAF]     * VALIDXML
+[THYMELEAF]     * LEGACYHTML5
+[THYMELEAF]     * XHTML
+[THYMELEAF] * Template resolvers (in order):
+[THYMELEAF]     * org.thymeleaf.templateresolver.TemplateResolver
+[THYMELEAF] * Message resolvers (in order):
+[THYMELEAF]     * org.thymeleaf.messageresolver.StandardMessageResolver
+[THYMELEAF] * Dialect: org.thymeleaf.standard.StandardDialect
+[THYMELEAF]     * Prefix: "th"
+[THYMELEAF] TEMPLATE ENGINE CONFIGURED OK
+INFO    2017-05-21 23:24:13,134 [qtp828513541-23] org.thymeleaf.TemplateEngine  - [THYMELEAF] TEMPLATE ENGINE INITIALIZED
+DEBUG   2017-05-21 23:24:15,213 [qtp828513541-18] com.codecool.shop.controller.ProductController  - Product added to batman users cart: id: 1, name: Amazon Fire, defaultPrice: 49.900002, defaultCurrency: USD, 
+DEBUG   2017-05-21 23:24:15,426 [qtp828513541-13] com.codecool.shop.controller.ProductController  - Product added to batman users cart: id: 1, name: Amazon Fire, defaultPrice: 49.900002, defaultCurrency: USD, 
+DEBUG   2017-05-21 23:24:15,658 [qtp828513541-25] com.codecool.shop.controller.ProductController  - Product added to batman users cart: id: 1, name: Amazon Fire, defaultPrice: 49.900002, defaultCurrency: USD, 
+DEBUG   2017-05-21 23:24:15,733 [qtp828513541-16] com.codecool.shop.controller.ProductController  - Product added to batman users cart: id: 1, name: Amazon Fire, defaultPrice: 49.900002, defaultCurrency: USD, 
+DEBUG   2017-05-21 23:24:15,920 [qtp828513541-20] com.codecool.shop.controller.ProductController  - Product added to batman users cart: id: 1, name: Amazon Fire, defaultPrice: 49.900002, defaultCurrency: USD, 
+DEBUG   2017-05-21 23:24:17,193 [qtp828513541-14] com.codecool.shop.controller.ProductController  - Rendered cart of anonymus user.
+INFO    2017-05-21 23:24:17,205 [qtp828513541-14] org.thymeleaf.TemplateEngine  - [THYMELEAF] INITIALIZING TEMPLATE ENGINE
+INFO    2017-05-21 23:24:17,213 [qtp828513541-14] org.thymeleaf.templateresolver.AbstractTemplateResolver  - [THYMELEAF] INITIALIZING TEMPLATE RESOLVER: org.thymeleaf.templateresolver.TemplateResolver
+INFO    2017-05-21 23:24:17,213 [qtp828513541-14] org.thymeleaf.templateresolver.AbstractTemplateResolver  - [THYMELEAF] TEMPLATE RESOLVER INITIALIZED OK
+INFO    2017-05-21 23:24:17,213 [qtp828513541-14] org.thymeleaf.messageresolver.AbstractMessageResolver  - [THYMELEAF] INITIALIZING MESSAGE RESOLVER: org.thymeleaf.messageresolver.StandardMessageResolver
+INFO    2017-05-21 23:24:17,213 [qtp828513541-14] org.thymeleaf.messageresolver.AbstractMessageResolver  - [THYMELEAF] MESSAGE RESOLVER INITIALIZED OK
+INFO    2017-05-21 23:24:17,214 [qtp828513541-14] org.thymeleaf.TemplateEngine.CONFIG  - [THYMELEAF] TEMPLATE ENGINE CONFIGURATION:
+[THYMELEAF] * Cache Factory implementation: org.thymeleaf.cache.StandardCacheManager
+[THYMELEAF] * Template modes:
+[THYMELEAF]     * HTML5
+[THYMELEAF]     * VALIDXHTML
+[THYMELEAF]     * XML
+[THYMELEAF]     * VALIDXML
+[THYMELEAF]     * LEGACYHTML5
+[THYMELEAF]     * XHTML
+[THYMELEAF] * Template resolvers (in order):
+[THYMELEAF]     * org.thymeleaf.templateresolver.TemplateResolver
+[THYMELEAF] * Message resolvers (in order):
+[THYMELEAF]     * org.thymeleaf.messageresolver.StandardMessageResolver
+[THYMELEAF] * Dialect: org.thymeleaf.standard.StandardDialect
+[THYMELEAF]     * Prefix: "th"
+[THYMELEAF] TEMPLATE ENGINE CONFIGURED OK
+INFO    2017-05-21 23:24:17,215 [qtp828513541-14] org.thymeleaf.TemplateEngine  - [THYMELEAF] TEMPLATE ENGINE INITIALIZED
+INFO    2017-05-21 23:24:17,677 [qtp828513541-13] spark.http.matching.MatcherFilter  - The requested route [/fonts/bootstrap/glyphicons-halflings-regular.woff2] has not been mapped in Spark
+INFO    2017-05-21 23:24:17,731 [qtp828513541-14] spark.http.matching.MatcherFilter  - The requested route [/fonts/bootstrap/glyphicons-halflings-regular.woff] has not been mapped in Spark
+INFO    2017-05-21 23:24:17,773 [qtp828513541-16] spark.http.matching.MatcherFilter  - The requested route [/fonts/bootstrap/glyphicons-halflings-regular.ttf] has not been mapped in Spark
